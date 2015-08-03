@@ -1,0 +1,69 @@
+#about img {
+    display: inline-block;
+    position: relative;
+}
+
+#about .thumb img {
+    height: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#about .profile img {
+    height: 80px;
+    transition: all .5s linear;
+}
+
+#about .profile.big img {
+    height: 150px;
+    transition: all .5s linear;
+    float: left;
+    margin: 0 20px 10px 10px;
+}
+
+#about .featured {
+    height: 200px;
+
+    padding: 20px;
+}
+
+#about .panel {
+    width: 30%;
+    display: inline-block;
+}
+
+
+#about .profile {
+    position: absolute;
+    opacity: 0;
+}
+
+#about .profile.big {
+    opacity: 1;
+    width: 27%;
+}
+
+#about .thumb {
+    display: inline-block;
+}
+
+#about .profile.big .desc {
+    display: inline;
+    
+    /* margin-top: 10px; */
+    /* float: left; */
+}
+
+#about .thumbs {
+    padding: 20px;
+}
+
+body {
+    font: 14px arial, sans-serif;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+}
