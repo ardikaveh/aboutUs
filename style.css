@@ -19,18 +19,19 @@
     height: 150px;
     transition: all .5s linear;
     float: left;
-    margin: 0 20px 10px 10px;
+    margin: 0 10px 10px 15px;
 }
 
 #about .featured {
     height: 200px;
 
-    padding: 20px;
+    padding-left: 15px;
 }
 
 #about .panel {
-    width: 30%;
+    width: 32.5%;
     display: inline-block;
+    height: 100px;
 }
 
 
@@ -41,7 +42,7 @@
 
 #about .profile.big {
     opacity: 1;
-    width: 27%;
+    width: 33%;
 }
 
 #about .thumb {
@@ -50,9 +51,7 @@
 
 #about .profile.big .desc {
     display: inline;
-    
-    /* margin-top: 10px; */
-    /* float: left; */
+    padding-right: 5px;
 }
 
 #about .thumbs {
@@ -66,4 +65,10 @@ body {
 h2 {
     padding: 20px;
     text-align: center;
+}
+
+#about {
+    max-width: 800px;
+    margin: auto;
+    position: relative;
 }
