@@ -4,9 +4,9 @@ $(document).ready(function() {
 	
 	//event handling
 	$(".thumb").click(function() {
-		var panel1Offset = $(".panel1").offset()
-		var panel2Offset = $(".panel2").offset()
-		var panel3Offset = $(".panel3").offset()
+		var panel1Offset = $(".panel1").position()
+		var panel2Offset = $(".panel2").position()
+		var panel3Offset = $(".panel3").position()
 		var profile0 = $(this).find(".profile");
 		var profile1 = $(".profile.panel1")
 		var profile2 = $(".profile.panel2")
@@ -18,8 +18,8 @@ $(document).ready(function() {
 
 		//blow up clicked profile
 		profile0.css({
- 			"left":$(this).offset().left,
- 			"top":$(this).offset().top
+ 			"left":$(this).position().left,
+ 			"top":$(this).position().top
  		})
 		profile0.animate(
 		{ 	
@@ -72,24 +72,6 @@ $(document).ready(function() {
 		{url:"http://goo.gl/g7sfCz", desc:"Frank Jones is a nice guy he likes to code stuff"},
 		{url:"http://goo.gl/zOgLJ5", desc:"Steve Smith is a nice guy he likes to code stuff"},
 		{url:"http://goo.gl/LhdHCp", desc:"Frank Jones is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/g7sfCz", desc:"Frank Dux is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/zOgLJ5", desc:"Steve dux is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/LhdHCp", desc:"Frank Smith is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/g7sfCz", desc:"Steve Jones is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/zOgLJ5", desc:"Frank Dux is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/LhdHCp", desc:"Steve Smith is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/g7sfCz", desc:"Frank Jones is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/zOgLJ5", desc:"Steve Smith is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/LhdHCp", desc:"Frank Jones is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/g7sfCz", desc:"Frank Dux is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/zOgLJ5", desc:"Steve Smith is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/LhdHCp", desc:"Paul Dux is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/zOgLJ5", desc:"Steve Smith is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/zOgLJ5", desc:"Frank Jones is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/g7sfCz", desc:"Frank Dux is a nice guy he likes to code stuff"},
-		{url:"http://goo.gl/zOgLJ5", desc:"Steve Smith is a nice guy he likes to code stuff, and do css"},
-		{url:"http://goo.gl/LhdHCp", desc:"Paul Dux is a nice guy he likes to code stuff!"},
-		{url:"http://goo.gl/LhdHCp", desc:"Paul Dux is a nice guy he likes to code stuff!"},
 		{url:"http://goo.gl/g7sfCz", desc:"Frank Dux is a nice guy he likes to code stuff"},
 		{url:"http://goo.gl/zOgLJ5", desc:"Steve Smith is a nice guy he likes to code stuff"},
 		{url:"http://goo.gl/LhdHCp", desc:"Paul Dux is a nice guy he likes to code stuff"},
