@@ -21,6 +21,9 @@
 #about .profile.big img {
     height: 150px;
     transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
     float: left;
     margin: 0 10px 10px 15px;
 }
