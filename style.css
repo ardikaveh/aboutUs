@@ -13,6 +13,9 @@
 #about .profile img {
     height: 80px;
     transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
 }
 
 #about .profile.big img {
